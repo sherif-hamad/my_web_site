@@ -1,0 +1,15 @@
+.footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
