@@ -35,7 +35,7 @@ const CardsGroup = () => {
                     <Card.Img
                         variant="top"
                         src={card.imgSrc}
-                        style={{ height: '200px', objectFit: 'cover' }}
+                        style={{ height: '300px', objectFit: 'cover' }}
                     />
                     <Card.Body>
                         <Card.Title style={{ color: '#4545c0', fontWeight: 'bold' }}>{card.title}</Card.Title>
