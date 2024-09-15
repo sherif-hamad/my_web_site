@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Section from './components/Section';
 import Footer from './components/Footer';
@@ -9,7 +8,6 @@ import CardsGroup from './components/CardsGroup';
 function App() {
   return (
     <div className="App">
-      <Header />
       <NavBar />
       <Section id="about" title="About Me">
         <p>Hello! I'm Sherif Hamad, a passionate Software Engineer with a love for creating something new everyday</p>
