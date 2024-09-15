@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Section id="about" title="About Me">
-        <p>Hello! I'm Sherif Hamad, a passionate Software Engineer with a love for creating something new everyday</p>
+      <Section id="about" title="Welcome to My World of Music!">
+        <p>Hello! I’m Sherif Hamad, a passionate musician driven by the art of crafting new and inspiring sounds every day. Music is not just a creative outlet for me—it’s a journey through emotions, stories, and life itself. Whether it’s composing original pieces or reimagining melodies, my goal is to connect, uplift, and resonate with listeners. Dive into my projects, explore my musical journey, and let’s share the beauty of sound together!</p>
         <CardsGroup />
       </Section>
       <Section id="projects" title="Sample of my musical projects">
