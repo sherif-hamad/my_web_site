@@ -4,12 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Form from 'react-bootstrap/Form';
 
 const NavBar = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <Container>
-                <span class="navbar-toggler-icon"></span>
                 <Navbar.Brand href="#home">Sherif Hamad</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -27,6 +27,15 @@ const NavBar = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
+                    <Form className="d-flex ms-auto">
+                        <input
+                            type="text"
+                            placeholder="Search my Website ..."
+                            className="form-control rounded animated-input"
+                            id="inputSearch"
+                        />
+                        <button type="button" className="btn btn-primary rounded animated-button ms-2">Search</button>
+                    </Form>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

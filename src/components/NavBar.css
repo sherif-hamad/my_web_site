@@ -20,3 +20,28 @@
   color: white;
   border-radius: 4px;
 }
+
+.animated-input,
+.animated-button {
+  transition: all 0.3s ease-in-out !important; /* Smooth transition for all properties */
+}
+
+.animated-input:hover,
+.animated-input:focus {
+  border-color: #007bff; /* Change border color on hover or focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a glowing shadow */
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+.animated-input:not(:placeholder-shown) {
+  border-color: #28a745; /* Change border color when text is entered */
+}
+
+.animated-button:hover,
+.animated-button:focus {
+  background-color: #0056b3; /* Darker background color on hover/focus */
+  border-color: #0056b3; /* Match border color with background */
+  transform: scale(1.1); /* Slightly increase button size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
