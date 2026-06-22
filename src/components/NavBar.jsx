@@ -6,25 +6,26 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 
-const NavBar = () => {
+const NavBar = ({ currentPage, onNavigate }) => {
+    const go = (page) => (e) => {
+        e.preventDefault();
+        if (onNavigate) onNavigate(page);
+    };
+
     return (
         <Navbar expand="lg" className="bg-body-tertiary navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand href="#home">Sherif Hamad</Navbar.Brand>
+                <Navbar.Brand href="#home" onClick={go('home')}>Sherif Hamad</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                    <Nav className="me-auto" activeKey={currentPage}>
+                        <Nav.Link href="#home" eventKey="home" onClick={go('home')}>Home</Nav.Link>
+                        <Nav.Link href="#music" eventKey="music" onClick={go('music')}>Music</Nav.Link>
                         <NavDropdown title="Home Server" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/plex">Plex</NavDropdown.Item>
                             <NavDropdown.Item href="/calibre">Calibre</NavDropdown.Item>
                             <NavDropdown.Item href="/calibre-web">Calibre Web</NavDropdown.Item>
                             <NavDropdown.Item href="/portainer">Portainer</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Form className="d-flex ms-auto">
@@ -43,11 +44,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-
-<nav className="nav-bar">
-    <a href="/plex">Plex</a>
-    <a href="/calibre">Calibre</a>
-    <a href="/calibre-web">Calibre Web</a>
-    <a href="/portainer">Portainer</a>
-</nav>
