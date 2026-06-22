@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import SiteHeader from './components/SiteHeader';
 import HomePage from './pages/HomePage';
 import LFOEffects from './tools/LFOEffects';
 import BiquadVisualizer from './tools/BiquadVisualizer';
@@ -6,6 +7,7 @@ import BiquadVisualizer from './tools/BiquadVisualizer';
 function App() {
   return (
     <Router>
+      <SiteHeader />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tools/lfo-effects" element={<LFOEffects />} />

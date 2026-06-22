@@ -1,0 +1,31 @@
+.music-page {
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  min-height: 100vh;
+}
+
+.music-page .section {
+  background: transparent;
+}
+
+.music-page .section-title {
+  color: #0284c7;
+}
+
+.music-page .card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  color: #1e293b;
+}
+
+.music-page .card h3 {
+  color: #0f172a;
+}
+
+.music-page .card p {
+  color: #475569;
+}
+
+.music-page .card a {
+  color: #0284c7;
+}

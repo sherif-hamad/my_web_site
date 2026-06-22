@@ -1,11 +1,12 @@
 import React from 'react';
+import './Music.css';
 import Section from './Section';
 import CardsGroup from './CardsGroup';
 import YouTubeVideo from './YouTubeVideo';
 
 const Music = () => {
     return (
-        <>
+        <div className="music-page">
             <Section id="about" title="Welcome to My World of Music!">
                 <p>Hello! I’m Sherif Hamad, a passionate musician driven by the art of crafting new and inspiring sounds every day. Music is not just a creative outlet for me—it’s a journey through emotions, stories, and life itself. Whether it’s composing original pieces or reimagining melodies, my goal is to connect, uplift, and resonate with listeners. Dive into my projects, explore my musical journey, and let’s share the beauty of sound together!</p>
                 <CardsGroup />
@@ -60,7 +61,7 @@ const Music = () => {
             <Section id="contact" title="Contact Me">
                 <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:sherif.hamad@live.com">sherif.hamad@live.com</a>...</p>
             </Section>
-        </>
+        </div>
     );
 };
 
