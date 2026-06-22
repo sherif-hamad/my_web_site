@@ -15,9 +15,11 @@ const Home = ({ onNavigate }) => {
                     <div className="hero-text">
                         <h1>Hi, I'm <span>Sherif</span></h1>
                         <p>
-                            Software engineer, embedded systems enthusiast, and creator.
-                            I build things where software meets hardware — from testing
-                            frameworks to ESP32 audio projects and DSP experiments.
+                            Software engineer, embedded systems enthusiast, musician
+                            and music producer. I build things where software meets
+                            hardware — from testing frameworks to ESP32 audio projects
+                            and DSP experiments — and when I'm not coding, I'm composing,
+                            recording, and producing music.
                         </p>
                         <a className="home-button" href="#about">Discover my journey</a>
                     </div>
