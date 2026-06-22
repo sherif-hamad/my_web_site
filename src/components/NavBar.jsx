@@ -3,7 +3,6 @@ import './NavBar.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 
 const NavBar = ({ currentPage, onNavigate }) => {
@@ -22,12 +21,6 @@ const NavBar = ({ currentPage, onNavigate }) => {
                         <Nav.Link href="#home" eventKey="home" onClick={go('home')}>Home</Nav.Link>
                         <Nav.Link href="#music" eventKey="music" onClick={go('music')}>Music</Nav.Link>
                         <Nav.Link href="/audio-tools/">Audio Tools</Nav.Link>
-                        <NavDropdown title="Home Server" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/plex">Plex</NavDropdown.Item>
-                            <NavDropdown.Item href="/calibre">Calibre</NavDropdown.Item>
-                            <NavDropdown.Item href="/calibre-web">Calibre Web</NavDropdown.Item>
-                            <NavDropdown.Item href="/portainer">Portainer</NavDropdown.Item>
-                        </NavDropdown>
                     </Nav>
                     <Form className="d-flex ms-auto">
                         <input
