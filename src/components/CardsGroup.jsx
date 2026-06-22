@@ -26,7 +26,9 @@ const CardsGroup = () => (
     <div className="music-cards-group">
         {cardData.map((card) => (
             <article className="music-card" key={card.title}>
-                <img src={card.imgSrc} alt={card.title} />
+                <div className="music-card-image">
+                    <img src={card.imgSrc} alt={card.title} loading="lazy" />
+                </div>
                 <div className="music-card-body">
                     <h3>{card.title}</h3>
                     <p>{card.text}</p>
