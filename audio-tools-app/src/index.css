@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Dark theme with neon accents - inspired by audio equipment */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: #1a1a24;
+  --bg-card-hover: #22222e;
+  
+  /* Neon accent colors */
+  --accent-cyan: #00f5ff;
+  --accent-magenta: #ff00aa;
+  --accent-purple: #a855f7;
+  --accent-green: #22c55e;
+  --accent-orange: #ff6b35;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-magenta) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(26, 26, 36, 0.8) 0%, rgba(18, 18, 26, 0.9) 100%);
+  
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b0;
+  --text-muted: #606070;
+  
+  /* Borders and effects */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --glow-cyan: 0 0 20px rgba(0, 245, 255, 0.3);
+  --glow-magenta: 0 0 20px rgba(255, 0, 170, 0.3);
+  
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  background-image: 
+    radial-gradient(ellipse at 20% 0%, rgba(0, 245, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(255, 0, 170, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-magenta);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--bg-secondary);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  cursor: pointer;
+  box-shadow: var(--glow-cyan);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--glow-cyan);
+}

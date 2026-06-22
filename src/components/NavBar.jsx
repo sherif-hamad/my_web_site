@@ -21,6 +21,7 @@ const NavBar = ({ currentPage, onNavigate }) => {
                     <Nav className="me-auto" activeKey={currentPage}>
                         <Nav.Link href="#home" eventKey="home" onClick={go('home')}>Home</Nav.Link>
                         <Nav.Link href="#music" eventKey="music" onClick={go('music')}>Music</Nav.Link>
+                        <Nav.Link href="/audio-tools/">Audio Tools</Nav.Link>
                         <NavDropdown title="Home Server" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/plex">Plex</NavDropdown.Item>
                             <NavDropdown.Item href="/calibre">Calibre</NavDropdown.Item>
