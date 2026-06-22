@@ -1,14 +1,17 @@
 .site-header {
-  background: #212529;
-  color: #ffffff;
-  padding: 12px 0;
-  border-bottom: 1px solid #343a40;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .site-header-inner {
-  max-width: 1320px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 14px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,36 +20,38 @@
 }
 
 .site-brand {
-  color: #ffffff !important;
-  font-size: 1.25rem;
-  font-weight: 600;
+  color: #0f172a !important;
+  font-size: 1.2rem;
+  font-weight: 700;
   text-decoration: none;
+  letter-spacing: -0.01em;
 }
 
 .site-brand:hover {
-  color: #cbd5e1 !important;
+  color: #0284c7 !important;
 }
 
 .site-nav {
   display: flex;
-  gap: 18px;
+  gap: 28px;
   align-items: center;
 }
 
 .site-nav a {
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: #475569 !important;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 500;
-  padding: 6px 4px;
-  transition: color 0.2s ease;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .site-nav a:hover {
-  color: #ffffff !important;
+  color: #0f172a !important;
 }
 
 .site-nav a.active {
-  color: #ffffff !important;
-  border-bottom: 2px solid #0284c7;
+  color: #0284c7 !important;
+  border-bottom-color: #0284c7;
 }

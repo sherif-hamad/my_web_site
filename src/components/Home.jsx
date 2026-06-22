@@ -11,7 +11,7 @@ const Home = ({ onNavigate }) => {
         <div className="home">
             <header className="hero">
                 <div className="hero-inner">
-                    <img className="hero-photo" src="/sherif.jpg" alt="Sherif Hamad" />
+                    <img className="hero-photo" src={`${process.env.PUBLIC_URL}/sherif.jpg`} alt="Sherif Hamad" />
                     <div className="hero-text">
                         <h1>Hi, I'm <span>Sherif</span></h1>
                         <p>
@@ -83,7 +83,7 @@ const Home = ({ onNavigate }) => {
                             PCM ADC/DAC experiments and real-time audio processing.
                         </p>
                     </div>
-                    <a className="home-card" href="#music" onClick={goTo('music')} style={{ textDecoration: 'none' }}>
+                    <a className="home-card home-card-link" href="#music" onClick={goTo('music')}>
                         <h3>Music Technology</h3>
                         <p>
                             Exploring samplers, drum machines, and ways to combine
@@ -124,11 +124,27 @@ const Home = ({ onNavigate }) => {
                     biking, and cooking for people I care about.
                 </p>
                 <p className="highlight">Curiosity is my favorite tool.</p>
-                <p style={{ marginTop: '20px' }}>
+                <p className="home-cta-row">
                     <a className="home-button" href="#music" onClick={goTo('music')}>
                         Explore my music →
                     </a>
                 </p>
+            </section>
+
+            <section id="contact">
+                <h2>Get in Touch</h2>
+                <p>I'm always happy to chat about engineering, embedded audio, or music.</p>
+                <ul className="home-socials">
+                    <li>
+                        <a href="mailto:sherif.hamad@live.com">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sherif-hamad" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@AlwanBaby" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    </li>
+                </ul>
             </section>
 
             <div className="home-footer">

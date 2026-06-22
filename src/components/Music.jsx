@@ -19,7 +19,7 @@ const Music = () => {
                 </div>
                 <div className="card">
                     <h3>Purposeful Musical Songs</h3>
-                    <p>Music that resemble my life journey and thoughs</p>
+                    <p>Music that resembles my life journey and thoughts</p>
                     <div className="video-container">
                         <YouTubeVideo videoId="0rDXyc1sDx0" />
                         <YouTubeVideo videoId="OGG-amD5Oqk" />
@@ -30,7 +30,7 @@ const Music = () => {
                 </div>
                 <div className="card">
                     <h3>Religious and Spiritual Music</h3>
-                    <p>Introduction to your first blog post...</p>
+                    <p>Songs reflecting faith, reflection, and the inner journey.</p>
                     <div className="video-container">
                         <YouTubeVideo videoId="vvX4UBq_Qlo" />
                         <YouTubeVideo videoId="juzSkqy4XZk" />
@@ -40,7 +40,7 @@ const Music = () => {
                 </div>
                 <div className="card">
                     <h3>Revolution Songs</h3>
-                    <p>Introduction to your first blog post...</p>
+                    <p>Music written for protest, hope, and the voices that needed to be heard.</p>
                     <div className="video-container">
                         <YouTubeVideo videoId="EeQMLn2xwm4" />
                         <YouTubeVideo videoId="fBVMnq8DWSQ" />
@@ -50,12 +50,6 @@ const Music = () => {
                         <YouTubeVideo videoId="eLYqefIu5Ho" />
                         <YouTubeVideo videoId="_b1TNOlSnFU" />
                     </div>
-                </div>
-            </Section>
-            <Section id="blog" title="Blog">
-                <div className="card">
-                    <h3>Blog Post 2</h3>
-                    <p>Introduction to your second blog post...</p>
                 </div>
             </Section>
             <Section id="contact" title="Contact Me">

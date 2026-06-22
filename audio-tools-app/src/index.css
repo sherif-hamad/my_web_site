@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* Dark theme with neon accents - inspired by audio equipment */
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: #1a1a24;
-  --bg-card-hover: #22222e;
-  
-  /* Neon accent colors */
-  --accent-cyan: #00f5ff;
-  --accent-magenta: #ff00aa;
-  --accent-purple: #a855f7;
-  --accent-green: #22c55e;
-  --accent-orange: #ff6b35;
-  
+  /* Light palette matching personal-website */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+
+  /* Accents */
+  --accent-cyan: #0284c7;
+  --accent-magenta: #d946ef;
+  --accent-purple: #7c3aed;
+  --accent-green: #16a34a;
+  --accent-orange: #ea580c;
+
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-magenta) 100%);
-  --gradient-card: linear-gradient(145deg, rgba(26, 26, 36, 0.8) 0%, rgba(18, 18, 26, 0.9) 100%);
-  
+  --gradient-primary: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+
   /* Text colors */
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0b0;
-  --text-muted: #606070;
-  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
   /* Borders and effects */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --glow-cyan: 0 0 20px rgba(0, 245, 255, 0.3);
-  --glow-magenta: 0 0 20px rgba(255, 0, 170, 0.3);
-  
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --glow-cyan: 0 0 24px rgba(2, 132, 199, 0.2);
+  --glow-magenta: 0 0 24px rgba(217, 70, 239, 0.2);
+
   font-family: 'Outfit', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   font-weight: 400;
@@ -102,7 +102,7 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: #e2e8f0;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -117,7 +117,7 @@ button {
 /* Selection styling */
 ::selection {
   background: var(--accent-cyan);
-  color: var(--bg-primary);
+  color: #ffffff;
 }
 
 /* Range input styling */

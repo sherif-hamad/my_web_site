@@ -1,51 +1,39 @@
 import React from 'react';
-import { Card, CardGroup, Button } from 'react-bootstrap'; // Assuming you are using react-bootstrap
-import studio from "../assets/studio1.png"; // Import the image
-import playingKeys from "../assets/studio2.jpg"
-import bigStudio from "../assets/studio3.jpg"
-
+import './CardsGroup.css';
+import studio from '../assets/studio1.jpg';
+import playingKeys from '../assets/studio2.jpg';
+import bigStudio from '../assets/studio3.jpg';
 
 const cardData = [
     {
-        title: "Writing Music",
-        text: "I'm a music producer and composer with passion for Orchestra",
-        imgSrc: `${studio}`,  // Replace with actual path
-        buttonText: "Explore My Work",
+        title: 'Writing Music',
+        text: "I'm a music producer and composer with a passion for orchestra.",
+        imgSrc: studio,
     },
     {
-        title: "Playing Keys",
-        text: "I like to play many instruments, specially Keys & Violin",
-        imgSrc: `${playingKeys}`,  // Replace with actual path
-        buttonText: "Explore My Work",
+        title: 'Playing Keys',
+        text: 'I play many instruments, especially keys and violin.',
+        imgSrc: playingKeys,
     },
     {
-        title: "In Studio",
-        text: "I'm a Recording & Mix engineer, with handson on different tools & techniques",
-        imgSrc: `${bigStudio}`,  // Replace with actual path
-        buttonText: "Explore My Work",
+        title: 'In Studio',
+        text: "I'm a recording and mix engineer, hands-on across different tools and techniques.",
+        imgSrc: bigStudio,
     },
 ];
 
-
-const CardsGroup = () => {
-    return (
-        <CardGroup>
-            {cardData.map((card, index) => (
-                <Card style={{ width: '18rem' }} className='me-3' key={index}>
-                    <Card.Img
-                        variant="top"
-                        src={card.imgSrc}
-                        style={{ height: '300px', objectFit: 'cover' }}
-                    />
-                    <Card.Body>
-                        <Card.Title style={{ color: '#4545c0', fontWeight: 'bold' }}>{card.title}</Card.Title>
-                        <Card.Text>{card.text}</Card.Text>
-                        <Button variant="primary">{card.buttonText}</Button>
-                    </Card.Body>
-                </Card>
-            ))}
-        </CardGroup>
-    );
-};
+const CardsGroup = () => (
+    <div className="music-cards-group">
+        {cardData.map((card) => (
+            <article className="music-card" key={card.title}>
+                <img src={card.imgSrc} alt={card.title} />
+                <div className="music-card-body">
+                    <h3>{card.title}</h3>
+                    <p>{card.text}</p>
+                </div>
+            </article>
+        ))}
+    </div>
+);
 
 export default CardsGroup;
